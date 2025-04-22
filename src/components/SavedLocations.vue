@@ -7,7 +7,7 @@
         v-for="(loc, index) in locations"
         :key="index"
       >
-      <!-- The button should emit a select event so that the parent HomePage.vue handles that correctly -->
+      <!-- The button emits a select event so that the parent HomePage.vue could handle that correctly -->
         <button class="loc-button" @click="$emit('select', loc)">
           {{ loc.name }}, {{ loc.country }}
         </button>

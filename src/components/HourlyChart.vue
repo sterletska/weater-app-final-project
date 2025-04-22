@@ -114,7 +114,4 @@ canvas {
   .hourly-chart {
   width: 90%;}
  }
-
-
-
 </style>

@@ -69,4 +69,5 @@ h2 {
 .cold .extremes{
   color: #42494a;
 }
+
 </style>

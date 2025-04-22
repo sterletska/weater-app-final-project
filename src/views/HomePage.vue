@@ -74,19 +74,19 @@ export default {
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`
   );
 
-  // Add name, state, and country to weather object manually
+  
   const weatherData = {
     ...weatherRes.data,
-    name,     // city name from geocoding
-    state,    // state from geocoding
-    country,  // country from geocoding
+    name,     
+    state,    
+    country,  
   };
 
   this.$emit('update-weather', weatherData);
   this.$emit('save-location', weatherData);
     },
     selectSaved(location) {
-  // Reuse searchCity by passing the selected location object
+  
   const cityQuery = `${location.name},${location.state || ''},${location.country}`;
   this.searchCity(cityQuery);
     },
@@ -112,7 +112,6 @@ body {
   padding: 10px 20px;
   font-weight: 500;
   text-shadow: 2px 4px 4px rgba(106, 81, 6, 0.25);
-  
 }
 
 /* Shared icon styling */

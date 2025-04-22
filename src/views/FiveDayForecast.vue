@@ -31,7 +31,7 @@ export default {
       );
       // Extract the 5-day forecast data (one point per day)
       this.forecastData = res.data.list.filter((item, index) => index % 8 === 0);
-      console.log(this.forecastData); // Check the fetched data
+      console.log(this.forecastData); 
     }
   }
 };

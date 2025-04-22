@@ -31,7 +31,7 @@ export default {
   props: ['forecastData', 'isCold'],
 
 isCold() {
-      this.renderChart(); // re-render when temperature style changes
+      this.renderChart(); // re-render when temperature when style changes
     }
 }
 
